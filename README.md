@@ -1,4 +1,8 @@
-﻿# Introdução  
+# Resultados do Teste de Stress
+
+![Stress Test Results](stresstest.jpg)
+
+# Introdução  
 
 Bem-vindo ao teste técnico da Thunders! 🚀 
 
