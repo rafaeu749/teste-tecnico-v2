@@ -22,6 +22,8 @@ builder.Services.AddProblemDetails();
 
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddHealthChecks();
+
 if (features.UseMessageBroker)
 {
     builder.Services.AddBus(builder.Configuration,
@@ -62,9 +64,9 @@ if (app.Environment.IsDevelopment())
         var plazaId3 = new Guid("ace3fa7f-313f-4c33-a69b-06d0b1c033a0");
 
         dbContext.TollPlazas.AddRange(
-            new TollPlaza { Id = plazaId1, Name = "Praça Norte", City = "Porto Alegre", State = "RS" },
-            new TollPlaza { Id = plazaId2, Name = "Praça Leste", City = "Porto Alegre", State = "RS" },
-            new TollPlaza { Id = plazaId3, Name = "Praça Oeste", City = "São Paulo", State = "SP" }
+            new TollPlaza { Id = plazaId1, Name = "Praca Norte", City = "Porto Alegre", State = "RS" },
+            new TollPlaza { Id = plazaId2, Name = "Praca Leste", City = "Porto Alegre", State = "RS" },
+            new TollPlaza { Id = plazaId3, Name = "Praca Oeste", City = "Sao Paulo", State = "SP" }
         );
 
         var date = DateTime.UtcNow;
